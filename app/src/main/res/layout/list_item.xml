@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="@dimen/padding_medium">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/icon_large"
+        android:layout_height="@dimen/icon_large"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="@dimen/padding_medium"
+        android:layout_marginRight="@dimen/padding_medium"
+        android:src="@drawable/default_img" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="title"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:minLines="1"
+        android:text="address"
+        android:textSize="@dimen/text_small" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="cost"
+        android:textSize="@dimen/text_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/cost"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="2"
+            android:stepSize="0.1" />
+    </LinearLayout>
+
+
+</RelativeLayout>

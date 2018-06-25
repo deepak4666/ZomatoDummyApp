@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+    <style name="AppThemeRatingBar" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">#f9a825</item>
+    </style>
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
